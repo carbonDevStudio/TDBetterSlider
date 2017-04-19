@@ -47,8 +47,14 @@
     [[alert textFieldAtIndex:0] setKeyboardType:UIKeyboardTypeNumberPad];
     
     BOOL needsNegate = [[self.specifier propertyForKey:@"min"] floatValue]<0;
-    BOOL needsPoint = [[self.specifier propertyForKey:@"max"] floatValue] - [[self.specifier propertyForKey:@"min"] floatValue] <= 10;
+    BOOL needsPoint = NO;
     
+    if ([self.specifier propertyForKey:@"allowDecimal"]) {
+        needsPoint = [[self.specifier propertyForKey:@"allowDecimal"] boolValue];
+    } else {
+        needsPoint = [[self.specifier propertyForKey:@"max"] floatValue] - [[self.specifier propertyForKey:@"min"] floatValue] <= 10;
+
+    }
     if ([[self.specifier propertyForKey:@"showPoint"] boolValue]) {
       needsPoint = YES;
     }
