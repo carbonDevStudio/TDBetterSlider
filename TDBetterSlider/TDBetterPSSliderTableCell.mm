@@ -53,10 +53,6 @@
         needsPoint = [[self.specifier propertyForKey:@"allowDecimal"] boolValue];
     } else {
         needsPoint = [[self.specifier propertyForKey:@"max"] floatValue] - [[self.specifier propertyForKey:@"min"] floatValue] <= 10;
-
-    }
-    if ([[self.specifier propertyForKey:@"showPoint"] boolValue]) {
-      needsPoint = YES;
     }
     
     if( UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPad && (needsNegate || needsPoint)) {
