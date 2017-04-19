@@ -3,11 +3,13 @@ An iOS Preferences slider replacement with a tap to type entry method
 
 ## Usage
 
-I personally use this slider alongside [SettingsKit](https://github.com/mlnlover11/SettingsKit) from mlnlover11, which allows specifier creation via obj-c NSDictionaries.
-
+Simply copy both files into project folder and import in needed files
 ```objc
 #import “TDBetterPSSliderTableCell.h"
 ```
+
+I personally use this slider alongside [SettingsKit](https://github.com/mlnlover11/SettingsKit) from mlnlover11, which allows specifier creation via obj-c NSDictionaries.
+
 And within the specifiers array, use it like so:
 ```objc
 NSArray *specs = @[
@@ -37,4 +39,4 @@ This should work with normal .plist preference bundles, just use the same keys i
 
 ## Example:
 
-![screenshot](http://i.imgur.com/46bLwBJ.png)
+![screenshot](http://i.imgur.com/42tvbIL.png)
