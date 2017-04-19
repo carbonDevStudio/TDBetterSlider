@@ -1,7 +1,7 @@
 # TDBetterSlider
 An iOS Preferences slider replacement with a tap to type entry method
 
-##Usage
+#Usage
 
 I personally use this slider alongside [SettingsKit](https://github.com/mlnlover11/SettingsKit) from mlnlover11, which allows specifier creation via obj-c NSDictionaries.
 
@@ -35,6 +35,6 @@ The negate (minus) button will automatically show if the minimum value is a nega
 
 This should work with normal .plist preference bundles, just use the same keys in the example above.
 
-##Example:
+#Example:
 
 ![screenshot](http://i.imgur.com/46bLwBJ.png)
